@@ -1,0 +1,429 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "",
+    "title": "dcp-on-call-api-staging"
+  },
+  "host": "dcp-on-call-api-staging.azurewebsites.net",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/status": {
+      "get": {
+        "tags": [
+          "Status"
+        ],
+        "description": "returns last deployment time in simple string format",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+
+    "/onCallLocations": { 
+      "get": {
+        "operationId": "get-onCallLocations",
+        "summary": "GET /onCallLocations",
+        "responses": {
+          "200": {
+              "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "operationId": "post-onCallLocations",
+        "summary": "POST /onCallLocations",
+        "responses": {
+          "201": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/onCallLocations/{id}": {
+      "get": {
+        "operationId": "get-onCallLocations-id",
+        "summary": "GET /onCallLocations/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "operationId": "put-onCallLocations-id",
+        "summary": "PUT /onCallLocations/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "operationId": "delete-onCallLocations-id",
+        "summary": "DELETE /onCallLocations/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/onCallPeople": { 
+      "get": {
+        "operationId": "get-onCallPeople",
+        "summary": "GET /onCallPeople",
+        "responses": {
+          "200": {
+              "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "operationId": "post-onCallPeople",
+        "summary": "POST /onCallPeople",
+        "responses": {
+          "201": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/onCallPeople/{id}": {
+      "get": {
+        "operationId": "get-onCallPeople-id",
+        "summary": "GET /onCallPeople/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "operationId": "put-onCallPeople-id",
+        "summary": "PUT /onCallPeople/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "operationId": "delete-onCallPeople-id",
+        "summary": "DELETE /onCallPeople/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+
+    "/onCallPersonLocations": { 
+      "get": {
+        "operationId": "get-onCallPersonLocations",
+        "summary": "GET /onCallPersonLocations",
+        "responses": {
+          "200": {
+              "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "operationId": "post-onCallPersonLocations",
+        "summary": "POST /onCallPersonLocations",
+        "responses": {
+          "201": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/onCallPersonLocations/{id}": {
+      "get": {
+        "operationId": "get-onCallPersonLocations-id",
+        "summary": "GET /onCallPersonLocations/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "operationId": "put-onCallPersonLocations-id",
+        "summary": "PUT /onCallPersonLocations/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "operationId": "delete-onCallPersonLocations-id",
+        "summary": "DELETE /onCallPersonLocations/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    
+    "/onCallPersonRegions": { 
+      "get": {
+        "operationId": "get-onCallPersonRegions",
+        "summary": "GET /onCallPersonRegions",
+        "responses": {
+          "200": {
+              "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "operationId": "post-onCallPersonRegions",
+        "summary": "POST /onCallPersonRegions",
+        "responses": {
+          "201": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/onCallPersonRegions/{id}": {
+      "get": {
+        "operationId": "get-onCallPersonRegions-id",
+        "summary": "GET /onCallPersonRegions/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "operationId": "put-onCallPersonRegions-id",
+        "summary": "PUT /onCallPersonRegions/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "operationId": "delete-onCallPersonRegions-id",
+        "summary": "DELETE /onCallPersonRegions/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    
+    "/onCallPersonTrades": { 
+      "get": {
+        "operationId": "get-onCallPersonTrades",
+        "summary": "GET /onCallPersonTrades",
+        "responses": {
+          "200": {
+              "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "operationId": "post-onCallPersonTrades",
+        "summary": "POST /onCallPersonTrades",
+        "responses": {
+          "201": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/onCallPersonTrades/{id}": {
+      "get": {
+        "operationId": "get-onCallPersonTrades-id",
+        "summary": "GET /onCallPersonTrades/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "operationId": "put-onCallPersonTrades-id",
+        "summary": "PUT /onCallPersonTrades/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "operationId": "delete-onCallPersonTrades-id",
+        "summary": "DELETE /onCallPersonTrades/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/setOffCall": { 
+      "get": {
+        "operationId": "get-setOffCall",
+        "summary": "GET /setOffCall",
+        "responses": {
+          "200": {
+              "description": "OK"
+          }
+        }
+      }
+    },
+    "/whoami": { 
+      "get": {
+        "operationId": "get-whoami",
+        "summary": "GET /whoami",
+        "responses": {
+          "200": {
+              "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+  }
+}
